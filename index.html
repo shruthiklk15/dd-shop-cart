@@ -17,34 +17,71 @@
         .navBarButton {
             float: right;
         }
+
+        .cart {
+            display: none;
+        }
+
+        .column {
+            flex: 52%;
+            padding: 0px 14px;
+        }
+
+        .homeImg {
+            height: 300px;
+        }
+
+        #home {
+            border: 1px solid yellow;
+            padding: 10px;
+            box-shadow: -2px 11px 10px 5px lightgoldenrodyellow
+        }
+
+        .affix {
+            top: 0;
+            width: 80%;
+            z-index: 999 !important;
+        }
+
+        .navbar-inverse {
+            background-color: lightgray !important;
+            border-color: #080808 !important;
+        }
+
+        .affix+.container-fluid {
+            padding-top: 30px;
+        }
+
+        .topPadding {
+            padding-top: 13px;
+        }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <!-- Also include jQueryUI -->
-    <script type="text/javascript"
-        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
-
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
     <!-- CDN Font Awesomes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-
-    <!-- jQuery library -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <!-- Latest compiled JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <title>ShopCart</title>
 </head>
 
 <body>
     <div class="content">
-        <div class="row">
-            <div class="col-md-8 col-sm-8">
+        <!-- Nav bar row -->
+        <div class="row navbar navbar-inverse" data-spy="affix" data-offset-top="197">
+            <div class="col-md-1 col-sm-1 topPadding">
+                <button type="button" class="btn" onclick="displayHome()">
+                    <span>
+                        <i class="fa fa-home" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="col-md-7 col-sm-7">
                 <h2 class="text-center">Welcome to Shopping cart</h2>
             </div>
-            <div class="col-md-4 col-sm-4">
+            <div class="col-md-4 col-sm-4 topPadding">
                 <div class="btn-group navBarButton">
-                    <button type="button" class="btn">
+                    <button type="button" onclick="displayCart()" class="btn">
                         <span>
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </span>
@@ -56,6 +93,39 @@
                     </button>
                 </div>
             </div>
+        </div>
+        <!-- home body here -->
+        <div id="home">
+            <div class="row">
+                <div class="column">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                </div>
+                <div class="column">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                </div>
+                <div class="column">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                </div>
+                <div class="column">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                    <img class="homeImg" src="images\shop-11.jpg">
+                </div>
+            </div>
+        </div>
+        <!-- cart body here -->
+        <div id="cart" class="cart">
+            Cart
         </div>
     </div>
     <script type="text/javascript" src="index.js"></script>
