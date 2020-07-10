@@ -10,6 +10,10 @@
     <!-- CDN Font Awesomes -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>ShopCart</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <!-- Also include jQueryUI -->
+    <script type="text/javascript"
+        src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
 </head>
 
 <body>
@@ -24,7 +28,7 @@
                 </button>
             </div>
             <div class="col-md-7 col-sm-7">
-                <h2 class="text-center">Welcome to Shopping cart</h2>
+                <h2 class="text-center bannerText">Welcome to Shopping cart</h2>
             </div>
             <div class="col-md-4 col-sm-4 topPadding">
                 <div class="btn-group navBarButton">
@@ -46,66 +50,89 @@
             <div class="row">
                 <div class="column col-md-12 col-sm-12">
                     <div class="imgSpace col-md-3 col-sm-3">
-                        <img id="firstImg" class="homeImg" src="images\shop-11.jpg">
-                        <p>People 21 ₹750</p>
+                        <div onmouseover="drag(this)" id="1">
+                            <img class="homeImg" src="images\shop-11.jpg">
+                            <p>People 21 ₹750</p>
+                        </div>
                     </div>
                     <div class="imgSpace col-md-3 col-sm-3">
-                        <img id="seccondImg" class="homeImg" src="images\shop-8.jpg">
-                        <p>People 11 ₹750</p>
+                        <div onmouseover="drag(this)" id="2">
+                            <img id="seccondImg" class="homeImg" src="images\shop-8.jpg">
+                            <p>People 11 ₹750</p>
+                        </div>
                     </div>
                     <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-6.jpg">
-                        <p>People 32 ₹750</p>
+                        <div onmouseover="drag(this)" id="3">
+                            <img class="homeImg" src="images\shop-6.jpg">
+                            <p>People 32 ₹750</p>
+                        </div>
                     </div>
                     <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-44.jpg">
-                        <p>People 45 ₹750</p>
-                    </div>
-                </div>
-                <div class="column col-md-12 col-sm-12">
-                    <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\left1.jpg">
-                        <p>Rig 11 ₹750</p>
-                    </div>
-                    <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-1.jpg">
-                        <p>Rig 23 ₹750</p>
-                    </div>
-                    <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-22.jpg">
-                        <p>Rig 62 ₹750</p>
-                    </div>
-                    <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-3.jpg">
-                        <p>Rig 18 ₹750</p>
+                        <div onmouseover="drag(this)" id="4">
+                            <img class="homeImg" src="images\shop-44.jpg">
+                            <p>People 45 ₹750</p>
+                        </div>
                     </div>
                 </div>
                 <div class="column col-md-12 col-sm-12">
                     <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-8.jpg">
-                        <p>Denim 51 ₹750</p>
+                        <div onmouseover="drag(this)" id="5">
+                            <img class="homeImg" src="images\left1.jpg">
+                            <p>Rig 11 ₹750</p>
+                        </div>
                     </div>
                     <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-77.jpg">
-                        <p>Denim 29 ₹750</p>
+                        <div onmouseover="drag(this)" id="6">
+                            <img class="homeImg" src="images\shop-1.jpg">
+                            <p>Rig 23 ₹750</p>
+                        </div>
                     </div>
                     <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-11.jpg">
-                        <p>Denim 53 ₹750</p>
+                        <div onmouseover="drag(this)" id="7">
+                            <img class="homeImg" src="images\shop-22.jpg">
+                            <p>Rig 62 ₹750</p>
+                        </div>
                     </div>
                     <div class="imgSpace col-md-3 col-sm-3">
-                        <img class="homeImg" src="images\shop-6.jpg">
-                        <p>Denim 39 ₹750</p>
+                        <div onmouseover="drag(this)" id="8">
+                            <img class="homeImg" src="images\shop-3.jpg">
+                            <p>Rig 18 ₹750</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column col-md-12 col-sm-12">
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <div onmouseover="drag(this)" id="9">
+                            <img class="homeImg" src="images\shop-8.jpg">
+                            <p>Denim 51 ₹750</p>
+                        </div>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <div onmouseover="drag(this)" id="10">
+                            <img class="homeImg" src="images\shop-77.jpg">
+                            <p>Denim 29 ₹750</p>
+                        </div>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <div onmouseover="drag(this)" id="11">
+                            <img class="homeImg" src="images\shop-11.jpg">
+                            <p>Denim 53 ₹750</p>
+                        </div>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <div onmouseover="drag(this)" id="12">
+                            <img class="homeImg" src="images\shop-6.jpg">
+                            <p>Denim 39 ₹750</p>
+                        </div>
                     </div>
                 </div>
             </div>
+            <!-- cart body here -->
+            <div id="cart" class="cart">
+                Cart
+            </div>
         </div>
-        <!-- cart body here -->
-        <div id="cart" class="cart">
-            Cart
-        </div>
-    </div>
-    <script type="text/javascript" src="index.js"></script>
+        <script type="text/javascript" src="index.js"></script>
 </body>
 
 </html>
