@@ -13,7 +13,7 @@ body {
     float: right;
 }
 
-.cart {
+#cart {
     display: none;
 }
 
@@ -26,10 +26,21 @@ body {
     height: 200px;
 }
 
+#purchaseBtn {
+    display: none;
+    margin-right: 7px;
+}
+
 #home {
     border: 1px solid yellow;
     padding: 10px;
     box-shadow: -2px 11px 10px 5px lightgoldenrodyellow
+}
+
+#cart {
+    border: 1px solid rgb(1, 126, 1);
+    padding: 10px;
+    box-shadow: -2px 11px 10px 5px rgb(121, 212, 136)
 }
 
 .affix {
@@ -68,4 +79,12 @@ p, h2 {
 .bannerText {
     margin-left: 125px;
     font-weight: bold;
+}
+
+.addBtn {
+    margin-left: 20px;
+}
+
+.alert {
+    display: none;
 }
