@@ -1,10 +1,9 @@
 function displayHome() {
-    document.getElementById("cart").style.display = "none";
-    document.getElementById("home").style.display = "block";
+    $("#cart").hide();
+    $("#home").show();
 
 }
 function displayCart() {
-    document.getElementById("home").style.display = "none";
-    document.getElementById("cart").style.display = "block";
-
+    $("#home").hide();
+    $("#cart").show();
 }

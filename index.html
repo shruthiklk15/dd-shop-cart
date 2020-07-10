@@ -22,13 +22,13 @@
             display: none;
         }
 
-        .column {
+        .column col-md-12 col-sm-12 {
             flex: 52%;
             padding: 0px 14px;
         }
 
         .homeImg {
-            height: 300px;
+            height: 200px;
         }
 
         #home {
@@ -45,7 +45,7 @@
 
         .navbar-inverse {
             background-color: lightgray !important;
-            border-color: #080808 !important;
+            border-color: darkgrey !important;
         }
 
         .affix+.container-fluid {
@@ -54,6 +54,10 @@
 
         .topPadding {
             padding-top: 13px;
+        }
+
+        .leftSpace {
+            margin-left: 4px !important;
         }
     </style>
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -86,7 +90,7 @@
                             <i class="fa fa-shopping-cart" aria-hidden="true"></i>
                         </span>
                     </button>
-                    <button type="button" class="btn">
+                    <button type="button" class="btn leftSpace">
                         <span>
                             <i class="fa fa-user-o" aria-hidden="true"></i> Login
                         </span>
@@ -97,29 +101,65 @@
         <!-- home body here -->
         <div id="home">
             <div class="row">
-                <div class="column">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
+                <div class="column col-md-12 col-sm-12">
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-11.jpg">
+                        <p>People 21 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-8.jpg">
+                        <p>People 11 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-6.jpg">
+                        <p>People 32 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-44.jpg">
+                        <p>People 45 ₹750</p>
+                    </div>
                 </div>
-                <div class="column">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
+                <div class="column col-md-12 col-sm-12">
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\left1.jpg">
+                        <p>Rig 11 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-1.jpg">
+                        <p>Rig 23 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-22.jpg">
+                        <p>Rig 62 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-3.jpg">
+                        <p>Rig 18 ₹750</p>
+                    </div>
                 </div>
-                <div class="column">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                </div>
-                <div class="column">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
-                    <img class="homeImg" src="images\shop-11.jpg">
+                <!-- <div class="column col-md-12 col-sm-12">
+                    <img class="homeImg" src="images\banner1.jpg">
+                    <img class="homeImg" src="images\banner2.jpg">
+                    <img class="homeImg" src="images\banner3.jpg">
+                    <img class="homeImg" src="images\banner4.jpg">
+                </div> -->
+                <div class="column col-md-12 col-sm-12">
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-8.jpg">
+                        <p>Denim 51 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-77.jpg">
+                        <p>Denim 29 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-11.jpg">
+                        <p>Denim 53 ₹750</p>
+                    </div>
+                    <div class="imgSpace col-md-3 col-sm-3">
+                        <img class="homeImg" src="images\shop-6.jpg">
+                        <p>Denim 39 ₹750</p>
+                    </div>
                 </div>
             </div>
         </div>
