@@ -3,7 +3,7 @@ I am creating this project to learn more on drag and drop option using jQuery.
 
 * Assignment project
 
-*Welcome to Shopping cart 
+* Welcome to Shopping cart 
 This project is basically developed to implement  the drag and drop option on the products.
 
 The shopping site consists of a navigation bar with home , login button and a cart.
