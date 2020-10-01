@@ -34,13 +34,13 @@ body {
 #home {
     border: 1px solid yellow;
     padding: 10px;
-    box-shadow: -2px 11px 10px 5px lightgoldenrodyellow
+    box-shadow: -2px 11px 10px 5px lightgoldenrodyellow;
 }
 
 #cart {
     border: 1px solid rgb(1, 126, 1);
     padding: 10px;
-    box-shadow: -2px 11px 10px 5px rgb(121, 212, 136)
+    box-shadow: -2px 11px 10px 5px rgb(121, 212, 136);
 }
 
 .affix {
