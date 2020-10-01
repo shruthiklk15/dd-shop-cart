@@ -39,7 +39,6 @@ function displayCart() {
         document.getElementById("assignDisplayText").innerHTML = displayText;
         $("#purchaseBtn").show();
     } else {
-        console.log("I am here");
         displayText = "<div class='col-md-12 col-sm-12'><h3>Cart is Empty</h3></div>";
         document.getElementById("assignDisplayText").innerHTML = displayText;
     }
@@ -72,7 +71,7 @@ function successAlert(id) {
     $(id).show();
     setTimeout(() => {
         $(id).hide();
-    }, 3000);
+    }, 2500);
 }
 
 
